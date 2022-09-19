@@ -1,0 +1,46 @@
+
+  <form [formGroup]="createForm"> 
+
+    <!-- {{createForm.value | json}} -->
+
+      <div class="myForm">
+          <h1>Build A Form</h1>
+    <div class="row">
+      <div class="col-md-12">
+         <label class="form-label">Label:</label>
+         <input formControlName="label" class="form-control" type="text" placeholder="Enter label name"  />
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <label class="form-label">Field Type:</label>
+            <select formControlName="select" class="form-select">
+              
+              <option > Text </option> 
+              <option> Textarea</option> 
+              <option> Select</option> 
+              <option> Checkbox</option> 
+              <option> Radios</option> 
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <label  class="form-label">Name:</label>
+            <input formControlName="name" class="form-control" type="text" placeholder="name">
+        </div>
+    </div>
+    
+    <div class="row" *ngIf="flag">
+        <div class="col-md-12">
+            <label  class="form-label">Option:</label>
+            <input  formControlName="option" name="option" class="form-control" type="text" placeholder="Options">
+        </div>
+    </div>
+
+    <button class="btn btn-primary" type="button" (click)="submit()">Submit</button>
+</div>
+  </form>
+

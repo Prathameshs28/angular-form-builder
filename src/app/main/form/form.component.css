@@ -1,0 +1,28 @@
+.showForm{
+    border: solid red 1px;
+    margin-top: 0%;
+    }
+
+
+.showForm {
+    margin-top: 2%;
+    padding: 40px;
+    margin-left: 10%;
+    margin-right: 20%;
+    border: gray solid 2px;
+    border-radius: 10px;
+  }
+  
+  label {
+    margin: 10px;
+  }
+  
+  button {
+    margin-top: 15px;
+  }
+  
+  h1{
+    text-align: center;
+  
+  }
+  
